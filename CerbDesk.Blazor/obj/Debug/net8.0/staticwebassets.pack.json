@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "/home/tomek/projekty/CerbDes/CerbDesk.Blazor/obj/Debug/net8.0/scopedcss/projectbundle/CerbDesk.Blazor.bundle.scp.css",
+      "PackagePath": "staticwebassets/CerbDesk.Blazor.bundle.scp.css"
+    },
+    {
+      "Id": "/home/tomek/projekty/CerbDes/CerbDesk.Blazor/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "/home/tomek/projekty/CerbDes/CerbDesk.Blazor/wwwroot/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/home/tomek/projekty/CerbDes/CerbDesk.Blazor/wwwroot/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/home/tomek/projekty/CerbDes/CerbDesk.Blazor/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.CerbDesk.Blazor.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.CerbDesk.Blazor.props",
+      "PackagePath": "build\\CerbDesk.Blazor.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.CerbDesk.Blazor.props",
+      "PackagePath": "buildMultiTargeting\\CerbDesk.Blazor.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.CerbDesk.Blazor.props",
+      "PackagePath": "buildTransitive\\CerbDesk.Blazor.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

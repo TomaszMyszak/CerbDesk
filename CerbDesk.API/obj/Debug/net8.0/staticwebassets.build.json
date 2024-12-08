@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "uXJznIXle6zeV1YHB3TL/hI4OngsLQwsiBhKSQmdQhQ=",
+  "Source": "CerbDesk.API",
+  "BasePath": "_content/CerbDesk.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

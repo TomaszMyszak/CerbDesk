@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CerbDesk.API", "CerbDesk.API\CerbDesk.API.csproj", "{EB9EBA58-BF26-4453-9BAD-08B87F91A25B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CerbDesk.Blazor", "CerbDesk.Blazor\CerbDesk.Blazor.csproj", "{24FD0B70-30E8-45DC-BDDA-1C212775FBB4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB9EBA58-BF26-4453-9BAD-08B87F91A25B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB9EBA58-BF26-4453-9BAD-08B87F91A25B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB9EBA58-BF26-4453-9BAD-08B87F91A25B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB9EBA58-BF26-4453-9BAD-08B87F91A25B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24FD0B70-30E8-45DC-BDDA-1C212775FBB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24FD0B70-30E8-45DC-BDDA-1C212775FBB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24FD0B70-30E8-45DC-BDDA-1C212775FBB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24FD0B70-30E8-45DC-BDDA-1C212775FBB4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

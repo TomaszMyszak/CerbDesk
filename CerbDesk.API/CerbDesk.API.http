@@ -1,0 +1,6 @@
+@CerbDesk.API_HostAddress = http://localhost:5290
+
+GET {{CerbDesk.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
