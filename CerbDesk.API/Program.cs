@@ -1,13 +1,26 @@
+using Microsoft.EntityFrameworkCore;
+using CerbDesk.API.Data;
+using CerbDesk.API.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+// Dodanie DbContext do połączenia z bazą danych (PostgreSQL)
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// Dodanie serwisów do kontenera DI
+builder.Services.AddScoped<AttachmentService>(); // Rejestracja AttachmentService
+
+// Dodanie kontrolerów
+builder.Services.AddControllers();
+
+// Swagger (dokumentacja OpenAPI)
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Konfiguracja potoku HTTP (middleware)
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -16,6 +29,12 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseRouting();
+
+// Mapowanie kontrolerów
+app.MapControllers();
+
+// Przykładowy endpoint WeatherForecast (opcjonalnie, można zostawić dla testów)
 var summaries = new[]
 {
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
@@ -23,7 +42,7 @@ var summaries = new[]
 
 app.MapGet("/weatherforecast", () =>
 {
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
+    var forecast = Enumerable.Range(1, 5).Select(index =>
         new WeatherForecast
         (
             DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
@@ -38,23 +57,8 @@ app.MapGet("/weatherforecast", () =>
 
 app.Run();
 
+// Definicja rekordu WeatherForecast
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {
     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 }
-
-
-using Microsoft.EntityFrameworkCore;
-using CerbDesk.API.Data;
-
-var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
-
-builder.Services.AddControllers();
-var app = builder.Build();
-
-app.MapControllers();
-app.Run();
