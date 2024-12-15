@@ -9,6 +9,5 @@
 \contentsline {subsection}{\numberline {4.3}Diagram Aktywnosci}{6}{subsection.4.3}%
 \contentsline {subsection}{\numberline {4.4}Diagram komponetnów}{7}{subsection.4.4}%
 \contentsline {subsection}{\numberline {4.5}Diagram sekwencji}{7}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}Diagram sekwencji (przykład dodawania zgłoszenia)}{8}{subsection.4.6}%
-\contentsline {section}{\numberline {5}Architektura systemu}{9}{section.5}%
-\contentsline {section}{\numberline {6}Podsumowanie}{10}{section.6}%
+\contentsline {section}{\numberline {5}Architektura systemu}{8}{section.5}%
+\contentsline {section}{\numberline {6}Podsumowanie}{9}{section.6}%

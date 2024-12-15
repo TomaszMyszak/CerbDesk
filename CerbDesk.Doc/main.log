@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.11)  15 DEC 2024 21:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.11)  15 DEC 2024 21:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -640,131 +640,42 @@ er^^Sow Docker oraz hostingu w chmurze Azure.
  []
 
 [4]
-<draw/diagramPU.png, id=102, 2028.57875pt x 226.8475pt>
+<draw/diagramPU.png, id=97, 2028.57875pt x 226.8475pt>
 File: draw/diagramPU.png Graphic file (type png)
 <use draw/diagramPU.png>
 Package pdftex.def Info: draw/diagramPU.png  used on input line 94.
 (pdftex.def)             Requested size: 362.37569pt x 40.52272pt.
-<draw/diagramClass.png, id=103, 432.61626pt x 541.02126pt>
+<draw/diagramClass.png, id=98, 432.61626pt x 541.02126pt>
 File: draw/diagramClass.png Graphic file (type png)
 <use draw/diagramClass.png>
 Package pdftex.def Info: draw/diagramClass.png  used on input line 99.
 (pdftex.def)             Requested size: 362.37569pt x 453.19995pt.
-<draw/diagramAktywnosci.png, id=104, 356.33125pt x 524.96124pt>
+<draw/diagramAktywnosci.png, id=99, 356.33125pt x 524.96124pt>
 File: draw/diagramAktywnosci.png Graphic file (type png)
 <use draw/diagramAktywnosci.png>
 Package pdftex.def Info: draw/diagramAktywnosci.png  used on input line 105.
 (pdftex.def)             Requested size: 362.37569pt x 533.89139pt.
  [5 <./draw/diagramPU.png (PNG copy)> <./draw/diagramClass.png (PNG copy)>]
-<draw/diagramKomponentow.png, id=109, 403.5075pt x 402.50375pt>
+<draw/diagramKomponentow.png, id=104, 403.5075pt x 402.50375pt>
 File: draw/diagramKomponentow.png Graphic file (type png)
 <use draw/diagramKomponentow.png>
 Package pdftex.def Info: draw/diagramKomponentow.png  used on input line 110.
 (pdftex.def)             Requested size: 362.37569pt x 361.47617pt.
 
 [6 <./draw/diagramAktywnosci.png (PNG copy)>]
-<draw/diagramSekwencji.png, id=114, 628.3475pt x 356.33125pt>
+<draw/diagramSekwencji.png, id=109, 628.3475pt x 356.33125pt>
 File: draw/diagramSekwencji.png Graphic file (type png)
 <use draw/diagramSekwencji.png>
 Package pdftex.def Info: draw/diagramSekwencji.png  used on input line 115.
 (pdftex.def)             Requested size: 362.37569pt x 205.49783pt.
  [7 <./draw/diagramKomponentow.png (PNG copy)> <./draw/diagramSekwencji.png (PN
 G copy)>]
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
-File: lstlang2.sty 2020/03/24 1.8d listings language file
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang3.sty
-File: lstlang3.sty 2020/03/24 1.8d listings language file
-)
-
-! Package Listings Error: Couldn't load requested language.
-
-See the Listings package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.121 ...tion=Kod PlantUML dla diagramu sekwencji]
-                                                  
-? 
-
-! Package Listings Error: language plantuml undefined.
-
-See the Listings package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.121 ...tion=Kod PlantUML dla diagramu sekwencji]
-                                                  
-? 
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 121.
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 1
-28.
-(/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
-File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 128.
-
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.128 User -> FE: Dodaj zgłoszenie
-                                   
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "82.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.128 User -> FE: Dodaj zgłoszenie
-                                   
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.130 BE -> DB: Insert zgłoszenie
-                                  
-? 
-
-! LaTeX Error: Invalid UTF-8 byte "82.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.130 BE -> DB: Insert zgłoszenie
-                                  
-? 
-[8]
-
-LaTeX Warning: File `system_architecture.png' not found on input line 151.
-
-
-! Package pdftex.def Error: File `system_architecture.png' not found: using dra
-ft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.151 ...h=0.8\textwidth]{system_architecture.png}
-                                                  
-? 
-[9]
+<draw/diagramArchitektury.png, id=115, 876.27374pt x 402.50375pt>
+File: draw/diagramArchitektury.png Graphic file (type png)
+<use draw/diagramArchitektury.png>
+Package pdftex.def Info: draw/diagramArchitektury.png  used on input line 132.
+(pdftex.def)             Requested size: 362.37569pt x 166.45247pt.
+ [8 <./draw/diagramArchitektury.png (PNG copy)>]
 
 ! LaTeX Error: Command \k unavailable in encoding OT1.
 
@@ -772,7 +683,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.158 ...sparcie dla organizacji w zakresie zarzą
+l.139 ...sparcie dla organizacji w zakresie zarzą
                                                   dzania zgłoszeniami oraz ...
 
 ? 
@@ -783,32 +694,30 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.158 ...zeniami oraz budowania bazy wiedzy. Dzię
+l.139 ...zeniami oraz budowania bazy wiedzy. Dzię
                                                   ki nowoczesnym technologio...
 
 ? 
-[10] (./main.aux)
+[9] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C790A70D33F7311ABEF13E71A7903E1D;2151.
+(rerunfilecheck)             Checksum: 7B336AC4F2612A64C47C12DA5B1C3E11;1824.
  ) 
 Here is how much of TeX's memory you used:
- 10909 strings out of 478287
- 167278 string characters out of 5849289
- 656626 words of memory out of 5000000
- 28922 multiletter control sequences out of 15000+600000
- 475240 words of font info for 48 fonts, out of 8000000 for 9000
+ 10550 strings out of 478287
+ 163274 string characters out of 5849289
+ 465998 words of memory out of 5000000
+ 28605 multiletter control sequences out of 15000+600000
+ 475071 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,6n,63p,371b,1272s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,6n,63p,340b,396s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-su
-per/sfrm1200.pfb>
-Output written on main.pdf (10 pages, 213068 bytes).
+mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf/fonts/type1/
+public/cm-super/sfrm1200.pfb>
+Output written on main.pdf (9 pages, 228892 bytes).
 PDF statistics:
- 186 PDF objects out of 1000 (max. 8388607)
- 157 compressed objects within 2 object streams
- 47 named destinations out of 1000 (max. 500000)
- 138 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 150 PDF objects out of 1000 (max. 8388607)
+ 125 compressed objects within 2 object streams
+ 31 named destinations out of 1000 (max. 500000)
+ 135 words of extra memory for PDF output out of 10000 (max. 10000000)
 

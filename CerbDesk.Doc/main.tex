@@ -117,25 +117,6 @@ System składa się z dwóch głównych modułów:
 
 \newpage
 
-\subsection{Diagram sekwencji (przykład dodawania zgłoszenia)}
-\begin{lstlisting}[language=PlantUML, caption=Kod PlantUML dla diagramu sekwencji]
-@startuml
-actor User
-participant "Frontend" as FE
-participant "API" as BE
-database "Database" as DB
-
-User -> FE: Dodaj zgłoszenie
-FE -> BE: POST /api/tickets
-BE -> DB: Insert zgłoszenie
-DB --> BE: OK
-BE --> FE: OK + TicketId
-FE --> User: Potwierdzenie
-@enduml
-\end{lstlisting}
-
-\newpage
-
 % Sekcja: Architektura systemu
 \section{Architektura systemu}
 System oparty jest na architekturze **klient-serwer**:
@@ -148,7 +129,7 @@ System oparty jest na architekturze **klient-serwer**:
 \end{itemize}
 
 \begin{center}
-\includegraphics[width=0.8\textwidth]{system_architecture.png}
+\includegraphics[width=0.8\textwidth]{draw/diagramArchitektury.png}
 \end{center}
 
 \newpage
