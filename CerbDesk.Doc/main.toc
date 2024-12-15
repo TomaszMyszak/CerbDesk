@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}Opis projektu}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Cel projektu}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Zakres projektu}{2}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Wymagania funkcjonalne}{3}{section.2}%
+\contentsline {section}{\numberline {3}Wymagania niefunkcjonalne}{4}{section.3}%
+\contentsline {section}{\numberline {4}Diagramy UML}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Diagram przypadków użycia}{5}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Diagram Klass}{5}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Diagram Aktywnosci}{6}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Diagram komponetnów}{7}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Diagram sekwencji}{7}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Diagram sekwencji (przykład dodawania zgłoszenia)}{8}{subsection.4.6}%
+\contentsline {section}{\numberline {5}Architektura systemu}{9}{section.5}%
+\contentsline {section}{\numberline {6}Podsumowanie}{10}{section.6}%
