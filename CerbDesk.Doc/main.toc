@@ -5,9 +5,9 @@
 \contentsline {section}{\numberline {3}Wymagania niefunkcjonalne}{4}{section.3}%
 \contentsline {section}{\numberline {4}Diagramy UML}{5}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Diagram przypadków użycia}{5}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Diagram Klass}{5}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Diagram Aktywnosci}{6}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Diagram komponetnów}{7}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.2}Diagram klas}{5}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Diagram aktywności}{6}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Diagram komponentów}{7}{subsection.4.4}%
 \contentsline {subsection}{\numberline {4.5}Diagram sekwencji}{7}{subsection.4.5}%
 \contentsline {section}{\numberline {5}Architektura systemu}{8}{section.5}%
 \contentsline {section}{\numberline {6}Podsumowanie}{9}{section.6}%

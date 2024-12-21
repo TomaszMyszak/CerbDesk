@@ -27,6 +27,7 @@ Projekt \textbf{Helpdesk} jest aplikacją wspierającą organizację w obsłudze
     \item Ułatwienie rejestrowania i śledzenia zgłoszeń przez pracowników.
     \item Szybsze rozwiązywanie problemów dzięki systematyzacji wiedzy.
     \item Efektywne zarządzanie zgłoszeniami przez administratorów IT.
+    \item Poprawa jakości obsługi poprzez analizę statystyk i raportów.
 \end{itemize}
 
 \subsection{Zakres projektu}
@@ -46,29 +47,34 @@ System składa się z dwóch głównych modułów:
         \item Tworzenie zgłoszeń z tytułem, opisem, priorytetem i załącznikami.
         \item Przeglądanie i filtrowanie zgłoszeń przez administratorów.
         \item Zmiana statusu zgłoszeń: otwarte, w trakcie realizacji, zamknięte.
+        \item Możliwość przypisywania zgłoszeń do konkretnych użytkowników.
     \end{itemize}
 
     \item \textbf{Obsługa załączników}
     \begin{itemize}
         \item Możliwość dodawania plików do zgłoszeń.
-        \item Przechowywanie plików na serwerze.
+        \item Przechowywanie plików na serwerze w strukturze folderów.
+        \item Pobieranie załączników przez użytkowników.
     \end{itemize}
 
     \item \textbf{Zarządzanie bazą wiedzy}
     \begin{itemize}
         \item Tworzenie, edytowanie i usuwanie artykułów z instrukcjami.
-        \item Wyszukiwanie artykułów po tagach lub pełnym tekście.
+        \item Wyszukiwanie artykułów po tagach, kategoriach lub pełnym tekście.
+        \item Opcja oceny artykułów przez użytkowników.
     \end{itemize}
 
     \item \textbf{Autoryzacja i role użytkowników}
     \begin{itemize}
-        \item Role: pracownik, administrator.
-        \item Logowanie i autoryzacja użytkowników.
+        \item Role: pracownik, administrator, menedżer.
+        \item Logowanie i autoryzacja użytkowników za pomocą tokenów JWT.
+        \item Zarządzanie użytkownikami przez administratora.
     \end{itemize}
 
     \item \textbf{Statystyki i raportowanie}
     \begin{itemize}
-        \item Wyświetlanie statystyk zgłoszeń: liczba zgłoszeń, średni czas odpowiedzi.
+        \item Wyświetlanie statystyk zgłoszeń: liczba zgłoszeń, średni czas odpowiedzi, liczba zamkniętych zgłoszeń.
+        \item Eksport raportów w formacie PDF lub CSV.
     \end{itemize}
 \end{enumerate}
 
@@ -82,6 +88,7 @@ System składa się z dwóch głównych modułów:
     \item \textbf{Skalowalność:} Możliwość rozszerzenia systemu o nowe funkcjonalności.
     \item \textbf{Dostępność:} System dostępny 24/7.
     \item \textbf{Przenaszalność:} Wsparcie dla kontenerów Docker oraz hostingu w chmurze Azure.
+    \item \textbf{Przyjazność użytkownika:} Intuicyjny interfejs dla użytkowników frontendowych (Blazor).
 \end{itemize}
 
 \newpage
@@ -94,18 +101,17 @@ System składa się z dwóch głównych modułów:
 \includegraphics[width=0.8\textwidth]{draw/diagramPU.png}
 \end{center}
 
-\subsection{Diagram Klass}
+\subsection{Diagram klas}
 \begin{center}
 \includegraphics[width=0.8\textwidth]{draw/diagramClass.png}
 \end{center}
 
-
-\subsection{Diagram Aktywnosci}
+\subsection{Diagram aktywności}
 \begin{center}
 \includegraphics[width=0.8\textwidth]{draw/diagramAktywnosci.png}
 \end{center}
 
-\subsection{Diagram komponetnów}
+\subsection{Diagram komponentów}
 \begin{center}
 \includegraphics[width=0.8\textwidth]{draw/diagramKomponentow.png}
 \end{center}
@@ -124,9 +130,12 @@ System oparty jest na architekturze **klient-serwer**:
     \item \textbf{Frontend:} Blazor WebAssembly.
     \item \textbf{Backend:} ASP.NET Core Web API.
     \item \textbf{Baza danych:} PostgreSQL.
-    \item \textbf{Przechowywanie plików:} System plików na serwerze.
+    \item \textbf{Przechowywanie plików:} System plików na serwerze z hierarchiczną strukturą katalogów.
     \item \textbf{Hosting:} Azure App Service lub Docker.
+    \item \textbf{Autoryzacja:} Uwierzytelnianie i autoryzacja oparte na JWT.
 \end{itemize}
+
+Diagram architektury systemu przedstawia podział na komponenty frontendowe, backendowe i bazę danych:
 
 \begin{center}
 \includegraphics[width=0.8\textwidth]{draw/diagramArchitektury.png}
@@ -136,6 +145,6 @@ System oparty jest na architekturze **klient-serwer**:
 
 % Sekcja: Podsumowanie
 \section{Podsumowanie}
-Aplikacja Helpdesk zapewnia kompleksowe wsparcie dla organizacji w zakresie zarządzania zgłoszeniami oraz budowania bazy wiedzy. Dzięki nowoczesnym technologiom, takim jak ASP.NET Core i Blazor, system jest wydajny, skalowalny i bezpieczny.
+Aplikacja Helpdesk zapewnia kompleksowe wsparcie dla organizacji w zakresie zarządzania zgłoszeniami oraz budowania bazy wiedzy. Dzięki nowoczesnym technologiom, takim jak ASP.NET Core i Blazor, system jest wydajny, skalowalny i bezpieczny. Moduł statystyk i raportowania wspiera podejmowanie decyzji na podstawie danych.
 
 \end{document}
