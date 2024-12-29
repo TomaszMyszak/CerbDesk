@@ -1,0 +1,328 @@
+.
+├── CerbDesk.API
+│   ├── appsettings.Development.json
+│   ├── appsettings.json
+│   ├── bin
+│   │   └── Debug
+│   │       └── net8.0
+│   │           ├── appsettings.Development.json
+│   │           ├── appsettings.json
+│   │           ├── CerbDesk.API
+│   │           ├── CerbDesk.API.deps.json
+│   │           ├── CerbDesk.API.dll
+│   │           ├── CerbDesk.API.pdb
+│   │           ├── CerbDesk.API.runtimeconfig.json
+│   │           ├── cs
+│   │           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+│   │           │   └── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│   │           ├── de
+│   │           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+│   │           │   └── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│   │           ├── es
+│   │           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+│   │           │   └── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│   │           ├── fr
+│   │           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+│   │           │   └── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│   │           ├── Humanizer.dll
+│   │           ├── it
+│   │           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+│   │           │   └── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│   │           ├── ja
+│   │           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+│   │           │   └── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│   │           ├── ko
+│   │           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+│   │           │   └── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│   │           ├── Microsoft.AspNetCore.OpenApi.dll
+│   │           ├── Microsoft.Bcl.AsyncInterfaces.dll
+│   │           ├── Microsoft.Build.Locator.dll
+│   │           ├── Microsoft.CodeAnalysis.CSharp.dll
+│   │           ├── Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+│   │           ├── Microsoft.CodeAnalysis.dll
+│   │           ├── Microsoft.CodeAnalysis.Workspaces.dll
+│   │           ├── Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+│   │           ├── Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+│   │           ├── Microsoft.EntityFrameworkCore.Abstractions.dll
+│   │           ├── Microsoft.EntityFrameworkCore.Design.dll
+│   │           ├── Microsoft.EntityFrameworkCore.dll
+│   │           ├── Microsoft.EntityFrameworkCore.Relational.dll
+│   │           ├── Microsoft.Extensions.Caching.Abstractions.dll
+│   │           ├── Microsoft.Extensions.Caching.Memory.dll
+│   │           ├── Microsoft.Extensions.Configuration.Abstractions.dll
+│   │           ├── Microsoft.Extensions.DependencyInjection.Abstractions.dll
+│   │           ├── Microsoft.Extensions.DependencyInjection.dll
+│   │           ├── Microsoft.Extensions.DependencyModel.dll
+│   │           ├── Microsoft.Extensions.Logging.Abstractions.dll
+│   │           ├── Microsoft.Extensions.Logging.dll
+│   │           ├── Microsoft.Extensions.Options.dll
+│   │           ├── Microsoft.Extensions.Primitives.dll
+│   │           ├── Microsoft.OpenApi.dll
+│   │           ├── Mono.TextTemplating.dll
+│   │           ├── Npgsql.dll
+│   │           ├── Npgsql.EntityFrameworkCore.PostgreSQL.dll
+│   │           ├── pl
+│   │           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+│   │           │   └── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│   │           ├── pt-BR
+│   │           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+│   │           │   └── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│   │           ├── ru
+│   │           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+│   │           │   └── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│   │           ├── runtimes
+│   │           │   └── browser
+│   │           │       └── lib
+│   │           │           └── net8.0
+│   │           │               └── System.Text.Encodings.Web.dll
+│   │           ├── Swashbuckle.AspNetCore.Swagger.dll
+│   │           ├── Swashbuckle.AspNetCore.SwaggerGen.dll
+│   │           ├── Swashbuckle.AspNetCore.SwaggerUI.dll
+│   │           ├── System.CodeDom.dll
+│   │           ├── System.Composition.AttributedModel.dll
+│   │           ├── System.Composition.Convention.dll
+│   │           ├── System.Composition.Hosting.dll
+│   │           ├── System.Composition.Runtime.dll
+│   │           ├── System.Composition.TypedParts.dll
+│   │           ├── System.Diagnostics.DiagnosticSource.dll
+│   │           ├── System.IO.Pipelines.dll
+│   │           ├── System.Text.Encodings.Web.dll
+│   │           ├── System.Text.Json.dll
+│   │           ├── tr
+│   │           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+│   │           │   └── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│   │           ├── zh-Hans
+│   │           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.resources.dll
+│   │           │   ├── Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+│   │           │   └── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│   │           └── zh-Hant
+│   │               ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│   │               ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│   │               ├── Microsoft.CodeAnalysis.resources.dll
+│   │               ├── Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+│   │               └── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│   ├── CerbDesk.API.csproj
+│   ├── CerbDesk.API.csproj.user
+│   ├── CerbDesk.API.http
+│   ├── CerbDesk.API.sln
+│   ├── Controllers
+│   │   ├── AnalyticsController.cs
+│   │   ├── AttachmentsController.cs
+│   │   ├── CategoriesController .cs
+│   │   ├── CommentsController.cs
+│   │   ├── LogsController .cs
+│   │   ├── NotificationsController.cs
+│   │   ├── SLAsController .cs
+│   │   ├── SurveyResponsesController .cs
+│   │   ├── SurveysController .cs
+│   │   ├── TagsController .cs
+│   │   ├── TicketsController.cs
+│   │   └── UsersController.cs
+│   ├── Data
+│   │   └── AppDbContext.cs
+│   ├── Models
+│   │   ├── Analytics
+│   │   │   └── Analytics.cs
+│   │   ├── Categories
+│   │   │   └── Category.cs
+│   │   ├── Core
+│   │   │   ├──  Attachment.cs
+│   │   │   ├── Comment.cs
+│   │   │   ├── Ticket.cs
+│   │   │   └── User.cs
+│   │   ├── Logging
+│   │   │   └── Log.cs
+│   │   ├── Notifications
+│   │   │   └── Notification.cs
+│   │   ├── SLA
+│   │   │   └── SLA.cs
+│   │   ├── Surveys
+│   │   │   ├── Survey.cs
+│   │   │   └── SurveyResponse.cs
+│   │   ├── Tagging
+│   │   │   ├── Tag.cs
+│   │   │   └── TicketTag.cs
+│   │   └── UserActivity
+│   │       └── UserActivity.cs
+│   ├── obj
+│   │   ├── CerbDesk.API.csproj.EntityFrameworkCore.targets
+│   │   ├── CerbDesk.API.csproj.nuget.dgspec.json
+│   │   ├── CerbDesk.API.csproj.nuget.g.props
+│   │   ├── CerbDesk.API.csproj.nuget.g.targets
+│   │   ├── Debug
+│   │   │   └── net8.0
+│   │   │       ├── apphost
+│   │   │       ├── apphost.exe
+│   │   │       ├── CerbDesk.9AA05ECD.Up2Date
+│   │   │       ├── CerbDesk.API.AssemblyInfo.cs
+│   │   │       ├── CerbDesk.API.AssemblyInfoInputs.cache
+│   │   │       ├── CerbDesk.API.assets.cache
+│   │   │       ├── CerbDesk.API.csproj.AssemblyReference.cache
+│   │   │       ├── CerbDesk.API.csproj.CoreCompileInputs.cache
+│   │   │       ├── CerbDesk.API.csproj.FileListAbsolute.txt
+│   │   │       ├── CerbDesk.API.dll
+│   │   │       ├── CerbDesk.API.GeneratedMSBuildEditorConfig.editorconfig
+│   │   │       ├── CerbDesk.API.genruntimeconfig.cache
+│   │   │       ├── CerbDesk.API.GlobalUsings.g.cs
+│   │   │       ├── CerbDesk.API.MvcApplicationPartsAssemblyInfo.cache
+│   │   │       ├── CerbDesk.API.MvcApplicationPartsAssemblyInfo.cs
+│   │   │       ├── CerbDesk.API.pdb
+│   │   │       ├── CerbDesk.API.sourcelink.json
+│   │   │       ├── ref
+│   │   │       │   └── CerbDesk.API.dll
+│   │   │       ├── refint
+│   │   │       │   └── CerbDesk.API.dll
+│   │   │       ├── staticwebassets
+│   │   │       │   ├── msbuild.build.CerbDesk.API.props
+│   │   │       │   ├── msbuild.buildMultiTargeting.CerbDesk.API.props
+│   │   │       │   └── msbuild.buildTransitive.CerbDesk.API.props
+│   │   │       └── staticwebassets.build.json
+│   │   ├── project.assets.json
+│   │   └── project.nuget.cache
+│   ├── Program.cs
+│   ├── Properties
+│   │   └── launchSettings.json
+│   ├── Services
+│   │   └── AttachmentService.cs
+│   └── texput.log
+├── CerbDesk.Blazor
+│   ├── appsettings.Development.json
+│   ├── appsettings.json
+│   ├── bin
+│   │   └── Debug
+│   │       └── net8.0
+│   │           ├── appsettings.Development.json
+│   │           ├── appsettings.json
+│   │           ├── CerbDesk.Blazor
+│   │           ├── CerbDesk.Blazor.deps.json
+│   │           ├── CerbDesk.Blazor.dll
+│   │           ├── CerbDesk.Blazor.pdb
+│   │           ├── CerbDesk.Blazor.runtimeconfig.json
+│   │           └── CerbDesk.Blazor.staticwebassets.runtime.json
+│   ├── CerbDesk.Blazor.csproj
+│   ├── Components
+│   │   ├── App.razor
+│   │   ├── _Imports.razor
+│   │   ├── Layout
+│   │   │   ├── MainLayout.razor
+│   │   │   ├── MainLayout.razor.css
+│   │   │   ├── NavMenu.razor
+│   │   │   └── NavMenu.razor.css
+│   │   ├── Pages
+│   │   │   ├── Counter.razor
+│   │   │   ├── Error.razor
+│   │   │   ├── Home.razor
+│   │   │   └── Weather.razor
+│   │   └── Routes.razor
+│   ├── obj
+│   │   ├── CerbDesk.Blazor.csproj.nuget.dgspec.json
+│   │   ├── CerbDesk.Blazor.csproj.nuget.g.props
+│   │   ├── CerbDesk.Blazor.csproj.nuget.g.targets
+│   │   ├── Debug
+│   │   │   └── net8.0
+│   │   │       ├── apphost
+│   │   │       ├── CerbDesk.Blazor.AssemblyInfo.cs
+│   │   │       ├── CerbDesk.Blazor.AssemblyInfoInputs.cache
+│   │   │       ├── CerbDesk.Blazor.assets.cache
+│   │   │       ├── CerbDesk.Blazor.csproj.CoreCompileInputs.cache
+│   │   │       ├── CerbDesk.Blazor.csproj.FileListAbsolute.txt
+│   │   │       ├── CerbDesk.Blazor.dll
+│   │   │       ├── CerbDesk.Blazor.GeneratedMSBuildEditorConfig.editorconfig
+│   │   │       ├── CerbDesk.Blazor.genruntimeconfig.cache
+│   │   │       ├── CerbDesk.Blazor.GlobalUsings.g.cs
+│   │   │       ├── CerbDesk.Blazor.MvcApplicationPartsAssemblyInfo.cache
+│   │   │       ├── CerbDesk.Blazor.pdb
+│   │   │       ├── CerbDesk.Blazor.sourcelink.json
+│   │   │       ├── ref
+│   │   │       │   └── CerbDesk.Blazor.dll
+│   │   │       ├── refint
+│   │   │       │   └── CerbDesk.Blazor.dll
+│   │   │       ├── scopedcss
+│   │   │       │   ├── bundle
+│   │   │       │   │   └── CerbDesk.Blazor.styles.css
+│   │   │       │   ├── Components
+│   │   │       │   │   └── Layout
+│   │   │       │   │       ├── MainLayout.razor.rz.scp.css
+│   │   │       │   │       └── NavMenu.razor.rz.scp.css
+│   │   │       │   └── projectbundle
+│   │   │       │       └── CerbDesk.Blazor.bundle.scp.css
+│   │   │       ├── staticwebassets
+│   │   │       │   ├── msbuild.build.CerbDesk.Blazor.props
+│   │   │       │   ├── msbuild.buildMultiTargeting.CerbDesk.Blazor.props
+│   │   │       │   ├── msbuild.buildTransitive.CerbDesk.Blazor.props
+│   │   │       │   └── msbuild.CerbDesk.Blazor.Microsoft.AspNetCore.StaticWebAssets.props
+│   │   │       ├── staticwebassets.build.json
+│   │   │       ├── staticwebassets.development.json
+│   │   │       └── staticwebassets.pack.json
+│   │   ├── project.assets.json
+│   │   └── project.nuget.cache
+│   ├── Program.cs
+│   ├── Properties
+│   │   └── launchSettings.json
+│   └── wwwroot
+│       ├── app.css
+│       ├── bootstrap
+│       │   ├── bootstrap.min.css
+│       │   └── bootstrap.min.css.map
+│       └── favicon.png
+├── cerbdesk.code-workspace
+├── CerbDesk.Doc
+│   ├── draw
+│   │   ├── diagramAktywnosci.png
+│   │   ├── diagramArchitektury.png
+│   │   ├── diagramClass.png
+│   │   ├── diagramKomponentow.png
+│   │   ├── diagramPU.png
+│   │   └── diagramSekwencji.png
+│   ├── main.aux
+│   ├── main.log
+│   ├── main.out
+│   ├── main.pdf
+│   ├── main.synctex.gz
+│   ├── main.tex
+│   └── main.toc
+├── CerbDes.sln
+├── dotnet-install.sh
+├── drzewoProjektu
+├── github
+├── github.pdf
+├── github.pub
+├── nowy
+└── README.md
+
+64 directories, 261 files

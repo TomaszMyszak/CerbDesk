@@ -1,0 +1,148 @@
+{
+  "workspace": [
+    {
+      "id": 1,
+      "text": "1. Rozwinięcie warstwy API: Utworzenie pełnych operacji CRUD dla TicketsController",
+      "completed": false,
+      "creationDate": "2024-12-29T19:30:00.000Z",
+      "isMarkdown": false,
+      "isNote": false
+    },
+    {
+      "id": 2,
+      "text": "1. Rozwinięcie warstwy API: Utworzenie pełnych operacji CRUD dla UsersController",
+      "completed": false,
+      "creationDate": "2024-12-29T19:30:00.000Z",
+      "isMarkdown": false,
+      "isNote": false
+    },
+    {
+      "id": 3,
+      "text": "1. Rozwinięcie warstwy API: Utworzenie pełnych operacji CRUD dla AttachmentsController",
+      "completed": false,
+      "creationDate": "2024-12-29T19:30:00.000Z",
+      "isMarkdown": false,
+      "isNote": false
+    },
+    {
+      "id": 4,
+      "text": "1. Rozwinięcie warstwy API: Utworzenie pełnych operacji CRUD dla CommentsController",
+      "completed": false,
+      "creationDate": "2024-12-29T19:30:00.000Z",
+      "isMarkdown": false,
+      "isNote": false
+    },
+    {
+      "id": 5,
+      "text": "1b. Obsługa relacji między tabelami: Zaimplementować metodę GetTicketWithDetails w TicketsController",
+      "completed": false,
+      "creationDate": "2024-12-29T19:30:00.000Z",
+      "isMarkdown": false,
+      "isNote": false
+    },
+    {
+      "id": 6,
+      "text": "2. Wprowadzenie mechanizmu autoryzacji i uwierzytelniania: Wdrożyć uwierzytelnianie JWT",
+      "completed": false,
+      "creationDate": "2024-12-29T19:30:00.000Z",
+      "isMarkdown": false,
+      "isNote": false
+    },
+    {
+      "id": 7,
+      "text": "2. Wprowadzenie mechanizmu autoryzacji i uwierzytelniania: Dodać kontroler do obsługi logowania i rejestracji użytkowników",
+      "completed": false,
+      "creationDate": "2024-12-29T19:30:00.000Z",
+      "isMarkdown": false,
+      "isNote": false
+    },
+    {
+      "id": 8,
+      "text": "2. Wprowadzenie mechanizmu autoryzacji i uwierzytelniania: Wprowadzić role użytkowników (Administrator, Pracownik, Klient)",
+      "completed": false,
+      "creationDate": "2024-12-29T19:30:00.000Z",
+      "isMarkdown": false,
+      "isNote": false
+    },
+    {
+      "id": 9,
+      "text": "3. Paginacja, filtrowanie i sortowanie danych: Dodać paginację w TicketsController",
+      "completed": false,
+      "creationDate": "2024-12-29T19:30:00.000Z",
+      "isMarkdown": false,
+      "isNote": false
+    },
+    {
+      "id": 10,
+      "text": "3. Paginacja, filtrowanie i sortowanie danych: Dodać filtrowanie zgłoszeń według statusu w TicketsController",
+      "completed": false,
+      "creationDate": "2024-12-29T19:30:00.000Z",
+      "isMarkdown": false,
+      "isNote": false
+    },
+    {
+      "id": 11,
+      "text": "4. Obsługa przesyłania plików (załączników): Dodać endpoint do przesyłania załączników w AttachmentsController",
+      "completed": false,
+      "creationDate": "2024-12-29T19:30:00.000Z",
+      "isMarkdown": false,
+      "isNote": false
+    },
+    {
+      "id": 12,
+      "text": "4. Obsługa przesyłania plików (załączników): Dodać endpoint do pobierania załączników w AttachmentsController",
+      "completed": false,
+      "creationDate": "2024-12-29T19:30:00.000Z",
+      "isMarkdown": false,
+      "isNote": false
+    },
+    {
+      "id": 13,
+      "text": "5. Logowanie działań użytkowników: Stworzyć mechanizm logowania działań użytkowników (np. dodanie, edycja, usunięcie zgłoszeń)",
+      "completed": false,
+      "creationDate": "2024-12-29T19:30:00.000Z",
+      "isMarkdown": false,
+      "isNote": false
+    },
+    {
+      "id": 14,
+      "text": "5. Logowanie działań użytkowników: Logować tworzenie i aktualizację zgłoszeń w TicketsController",
+      "completed": false,
+      "creationDate": "2024-12-29T19:30:00.000Z",
+      "isMarkdown": false,
+      "isNote": false
+    },
+    {
+      "id": 15,
+      "text": "6. Testy API: Skonfigurować testy jednostkowe za pomocą xUnit",
+      "completed": false,
+      "creationDate": "2024-12-29T19:30:00.000Z",
+      "isMarkdown": false,
+      "isNote": false
+    },
+    {
+      "id": 16,
+      "text": "6. Testy API: Napisać testy jednostkowe dla TicketsController",
+      "completed": false,
+      "creationDate": "2024-12-29T19:30:00.000Z",
+      "isMarkdown": false,
+      "isNote": false
+    },
+    {
+      "id": 17,
+      "text": "7. Dokumentacja API: Skonfigurować Swagger dla automatycznej dokumentacji API",
+      "completed": false,
+      "creationDate": "2024-12-29T19:30:00.000Z",
+      "isMarkdown": false,
+      "isNote": false
+    },
+    {
+      "id": 18,
+      "text": "7. Dokumentacja API: Przetestować dokumentację Swagger w przeglądarce",
+      "completed": false,
+      "creationDate": "2024-12-29T19:30:00.000Z",
+      "isMarkdown": false,
+      "isNote": false
+    }
+  ]
+}

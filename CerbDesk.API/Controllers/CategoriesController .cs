@@ -3,6 +3,7 @@ using CerbDesk.API.Models;
 using CerbDesk.API.Models.Categories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CerbDesk.API.Controllers
 {
@@ -25,7 +26,7 @@ namespace CerbDesk.API.Controllers
             return Ok(categories);
         }
 
-        // POST: api/categories
+        [Authorize(Roles = "Administrator")]
         [HttpPost]
         public async Task<IActionResult> CreateCategory([FromBody] Category category)
         {
