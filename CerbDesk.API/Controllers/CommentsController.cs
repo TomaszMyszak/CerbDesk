@@ -42,6 +42,21 @@ namespace CerbDesk.API.Controllers
             return Ok(comment);
         }
 
+        // GET: api/comments/{id}
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetCommentWithDetails(int id)
+        {
+            var comment = await _context.Comments
+                .Include(c => c.Ticket) // Ładowanie powiązanego zgłoszenia
+                .Include(c => c.User)   // Ładowanie użytkownika
+                .FirstOrDefaultAsync(c => c.Id == id);
+
+            if (comment == null)
+                return NotFound();
+
+            return Ok(comment);
+        }
+
         // POST: api/comments
         [HttpPost]
         public async Task<IActionResult> CreateComment([FromBody] Comment comment)
@@ -87,5 +102,8 @@ namespace CerbDesk.API.Controllers
             await _context.SaveChangesAsync();
             return NoContent();
         }
+
+        
+
     }
 }

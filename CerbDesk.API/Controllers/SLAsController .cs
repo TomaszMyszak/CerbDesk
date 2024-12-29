@@ -19,9 +19,12 @@ namespace CerbDesk.API.Controllers
 
         // GET: api/slas
         [HttpGet]
-        public async Task<IActionResult> GetSLAs()
+        public async Task<IActionResult> GetSLAsWithTickets()
         {
-            var slas = await _context.SLAs.ToListAsync();
+            var slas = await _context.SLAs
+                .Include(s => s.Tickets) // Relacja z tabelą Tickets
+                .ToListAsync();
+
             return Ok(slas);
         }
 

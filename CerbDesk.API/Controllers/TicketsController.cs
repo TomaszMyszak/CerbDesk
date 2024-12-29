@@ -94,5 +94,23 @@ namespace CerbDesk.API.Controllers
             await _context.SaveChangesAsync();
             return NoContent();
         }
+
+
+        // GET: api/tickets/{id}
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetTicketWithDetails(int id)
+        {
+            var ticket = await _context.Tickets
+                .Include(t => t.Attachments) // Ładowanie załączników
+                .Include(t => t.Comments)   // Ładowanie komentarzy
+                .Include(t => t.User)       // Ładowanie użytkownika zgłoszenia
+                .FirstOrDefaultAsync(t => t.Id == id);
+
+            if (ticket == null)
+                return NotFound();
+
+            return Ok(ticket);
+        }
+
     }
 }

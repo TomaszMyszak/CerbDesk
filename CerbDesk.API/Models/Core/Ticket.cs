@@ -24,6 +24,8 @@ namespace CerbDesk.API.Models.Core
         public int? SLAId { get; set; } // Powi¹zanie ze SLA
         public SLA.SLA SLA { get; set; } // U¿ycie aliasu // Nawigacja do SLA
         public object TicketTags { get; internal set; }
+        public object Comments { get; internal set; }
+        public object Attachments { get; internal set; }
     }
 
 }

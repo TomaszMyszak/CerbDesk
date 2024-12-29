@@ -33,5 +33,41 @@ namespace CerbDesk.API.Controllers
             await _context.SaveChangesAsync();
             return CreatedAtAction(nameof(GetSurveys), new { id = survey.Id }, survey);
         }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateSurvey(int id, [FromBody] Survey survey)
+        {
+            if (id != survey.Id)
+                return BadRequest();
+
+            _context.Entry(survey).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!_context.Surveys.Any(s => s.Id == id))
+                    return NotFound();
+
+                throw;
+            }
+
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteSurvey(int id)
+        {
+            var survey = await _context.Surveys.FindAsync(id);
+            if (survey == null)
+                return NotFound();
+
+            _context.Surveys.Remove(survey);
+            await _context.SaveChangesAsync();
+            return NoContent();
+        }
+
     }
 }

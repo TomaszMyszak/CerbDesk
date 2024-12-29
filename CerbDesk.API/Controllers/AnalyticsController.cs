@@ -1,6 +1,7 @@
 ﻿using CerbDesk.API.Data;
 using CerbDesk.API.Models.Core;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace CerbDesk.API.Controllers
 {
@@ -17,9 +18,12 @@ namespace CerbDesk.API.Controllers
 
         // GET: api/analytics
         [HttpGet]
-        public IActionResult GetAnalytics()
+        public async Task<IActionResult> GetAnalyticsWithDetails()
         {
-            var analytics = _context.Analytics.ToList(); // Poprawne użycie ToList
+            var analytics = await _context.Analytics
+                .Include(a => a.User) // Relacja z użytkownikiem (jeśli istnieje)
+                .ToListAsync();
+
             return Ok(analytics);
         }
 

@@ -13,5 +13,7 @@ namespace CerbDesk.API.Models.Core
         public string Role { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public object Tickets { get; internal set; }
+        public object Comments { get; internal set; }
+        public object Attachments { get; internal set; }
     }
 }

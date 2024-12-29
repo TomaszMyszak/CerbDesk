@@ -80,5 +80,20 @@ namespace CerbDesk.API.Controllers
             await _context.SaveChangesAsync();
             return NoContent();
         }
+
+        // GET: api/users/{id}
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetUserWithDetails(int id)
+        {
+            var user = await _context.Users
+                .Include(u => u.Tickets)      // Ładowanie zgłoszeń użytkownika
+                .Include(u => u.Attachments) // Ładowanie załączników użytkownika
+                .FirstOrDefaultAsync(u => u.Id == id);
+
+            if (user == null)
+                return NotFound();
+
+            return Ok(user);
+        }
     }
 }
