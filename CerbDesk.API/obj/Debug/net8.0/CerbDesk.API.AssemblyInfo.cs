@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CerbDesk.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+456161f9866ca1fdd281a6b4c8fdd4b507c93962")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8fc48340340d8e1e2ea81471c44663ebda15a064")]
 [assembly: System.Reflection.AssemblyProductAttribute("CerbDesk.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CerbDesk.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

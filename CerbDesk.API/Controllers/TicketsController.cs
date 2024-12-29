@@ -47,7 +47,7 @@ namespace CerbDesk.API.Controllers
 
         // POST: api/tickets
         [HttpPost]
-        public async Task<IActionResult> CreateTicket([FromBody] Models.Ticket ticket)
+        public async Task<IActionResult> CreateTicket([FromBody] Ticket ticket)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -60,7 +60,7 @@ namespace CerbDesk.API.Controllers
 
         // PUT: api/tickets/{id}
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateTicket(int id, [FromBody] Models.Ticket ticket)
+        public async Task<IActionResult> UpdateTicket(int id, [FromBody] Ticket ticket)
         {
             if (id != ticket.Id)
                 return BadRequest();

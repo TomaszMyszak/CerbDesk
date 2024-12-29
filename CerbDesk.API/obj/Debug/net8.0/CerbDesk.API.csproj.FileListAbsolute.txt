@@ -134,3 +134,14 @@
 /home/tomek/projekty/CerbDes/CerbDesk.API/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 /home/tomek/projekty/CerbDes/CerbDesk.API/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 /home/tomek/projekty/CerbDes/CerbDesk.API/bin/Debug/net8.0/runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll
+C:\Users\tmysz\Source\Repos\CerbDesk\CerbDesk.API\obj\Debug\net8.0\CerbDesk.API.csproj.AssemblyReference.cache
+C:\Users\tmysz\Source\Repos\CerbDesk\CerbDesk.API\obj\Debug\net8.0\CerbDesk.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tmysz\Source\Repos\CerbDesk\CerbDesk.API\obj\Debug\net8.0\CerbDesk.API.AssemblyInfoInputs.cache
+C:\Users\tmysz\Source\Repos\CerbDesk\CerbDesk.API\obj\Debug\net8.0\CerbDesk.API.AssemblyInfo.cs
+C:\Users\tmysz\Source\Repos\CerbDesk\CerbDesk.API\obj\Debug\net8.0\CerbDesk.API.csproj.CoreCompileInputs.cache
+C:\Users\tmysz\Source\Repos\CerbDesk\CerbDesk.API\obj\Debug\net8.0\CerbDesk.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\tmysz\Source\Repos\CerbDesk\CerbDesk.API\obj\Debug\net8.0\CerbDesk.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\tmysz\Source\Repos\CerbDesk\CerbDesk.API\obj\Debug\net8.0\CerbDesk.API.sourcelink.json
+C:\Users\tmysz\Source\Repos\CerbDesk\CerbDesk.API\obj\Debug\net8.0\CerbDesk.API.dll
+C:\Users\tmysz\Source\Repos\CerbDesk\CerbDesk.API\obj\Debug\net8.0\refint\CerbDesk.API.dll
+C:\Users\tmysz\Source\Repos\CerbDesk\CerbDesk.API\obj\Debug\net8.0\CerbDesk.API.pdb

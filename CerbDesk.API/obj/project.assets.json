@@ -3359,24 +3359,32 @@
     ]
   },
   "packageFolders": {
-    "/home/tomek/.nuget/packages/": {}
+    "C:\\Users\\tmysz\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/tomek/projekty/CerbDes/CerbDesk.API/CerbDesk.API.csproj",
+      "projectUniqueName": "C:\\Users\\tmysz\\Source\\Repos\\CerbDesk\\CerbDesk.API\\CerbDesk.API.csproj",
       "projectName": "CerbDesk.API",
-      "projectPath": "/home/tomek/projekty/CerbDes/CerbDesk.API/CerbDesk.API.csproj",
-      "packagesPath": "/home/tomek/.nuget/packages/",
-      "outputPath": "/home/tomek/projekty/CerbDes/CerbDesk.API/obj/",
+      "projectPath": "C:\\Users\\tmysz\\Source\\Repos\\CerbDesk\\CerbDesk.API\\CerbDesk.API.csproj",
+      "packagesPath": "C:\\Users\\tmysz\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tmysz\\Source\\Repos\\CerbDesk\\CerbDesk.API\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/tomek/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\tmysz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3438,7 +3446,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

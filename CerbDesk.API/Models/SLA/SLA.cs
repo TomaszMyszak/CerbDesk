@@ -1,6 +1,6 @@
 ﻿using CerbDesk.API.Models.Core;
 
-namespace CerbDesk.API.Models.Core
+namespace CerbDesk.API.Models.SLA
 {
     public class SLA
     {

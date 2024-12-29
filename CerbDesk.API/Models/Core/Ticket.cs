@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using CerbDesk.API.Models.Categories;
 using CerbDesk.API.Models.Core;
-using SLA_Core = CerbDesk.API.Models.Core; // Alias dla przestrzeni nazw
+using CerbDesk.API.Models.SLA;
 
-namespace CerbDesk.API.Models
+namespace CerbDesk.API.Models.Core
 {
     public class Ticket
     {
@@ -22,7 +22,8 @@ namespace CerbDesk.API.Models
         public int? CategoryId { get; set; } // Opcjonalna kategoria zg³oszenia
         public Category Category { get; set; } // Nawigacja do kategorii
         public int? SLAId { get; set; } // Powi¹zanie ze SLA
-        public SLA_Core.SLA SLA { get; set; } // U¿ycie aliasu // Nawigacja do SLA
+        public SLA.SLA SLA { get; set; } // U¿ycie aliasu // Nawigacja do SLA
+        public object TicketTags { get; internal set; }
     }
 
 }

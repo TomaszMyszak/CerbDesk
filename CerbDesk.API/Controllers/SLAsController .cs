@@ -1,5 +1,6 @@
 ﻿using CerbDesk.API.Data;
 using CerbDesk.API.Models.Core;
+using CerbDesk.API.Models.SLA;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 

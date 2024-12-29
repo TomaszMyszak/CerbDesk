@@ -4,6 +4,15 @@ using Microsoft.AspNetCore.Http;
 using System;
 using System.IO;
 using System.Threading.Tasks;
+using CerbDesk.API.Models.Core; // Namespace dla głównych modeli w folderze Core
+using CerbDesk.API.Models.Categories;
+using CerbDesk.API.Models.Logging;
+using CerbDesk.API.Models.Notifications;
+using CerbDesk.API.Models.Surveys;
+using CerbDesk.API.Models.Tagging;
+using CerbDesk.API.Models.UserActivity;
+using CerbDesk.API.Models.SLA;
+
 
 namespace CerbDesk.API.Services
 {
