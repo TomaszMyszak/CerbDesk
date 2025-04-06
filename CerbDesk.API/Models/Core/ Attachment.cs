@@ -17,8 +17,11 @@ namespace CerbDesk.API.Models.Core
         public long FileSize { get; set; } // Rozmiar pliku w bajtach
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow; // Data utworzenia pliku
 
+        public int UserId { get; set; } // userID
+        public User User { get; set; }
+
         // Relacja do zgłoszenia (Ticket)
-        public required Ticket Ticket { get; set; }
+        public Ticket? Ticket { get; set; }
        // public object? Ticket { get => ticket; internal set => ticket = value; }  // Wyjaśnić i zweryfikować w fazie testowania aplikacji
     }
 }

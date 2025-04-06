@@ -3,11 +3,11 @@ using CerbDesk.API.Models.Auth;
 using CerbDesk.API.Models.Core;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using Org.BouncyCastle.Crypto.Generators;
+using BCrypt.Net;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using Microsoft.AspNetCore.Cryptography.KeyDerivation;
-using Org.BouncyCastle.Crypto.Generators;
 
 namespace CerbDesk.API.Controllers
 {
@@ -24,7 +24,6 @@ namespace CerbDesk.API.Controllers
             _config = config;
         }
 
-        // POST: api/auth/register
         [HttpPost("register")]
         public IActionResult Register(RegisterRequest request)
         {
@@ -35,6 +34,7 @@ namespace CerbDesk.API.Controllers
             {
                 Name = request.Name,
                 Email = request.Email,
+                Role = "User",
                 PasswordHash = BCrypt.Net.BCrypt.HashPassword(request.Password)
             };
 
@@ -44,12 +44,11 @@ namespace CerbDesk.API.Controllers
             return Ok("Rejestracja zakończona sukcesem.");
         }
 
-        // POST: api/auth/login
         [HttpPost("login")]
         public IActionResult Login(LoginRequest request)
         {
             var user = _context.Users.FirstOrDefault(u => u.Email == request.Email);
-            if (!(user != null && BCrypt.Net.BCrypt.Verify(request.Password, user.PasswordHash)))
+            if (user == null || !BCrypt.Net.BCrypt.Verify(request.Password, user.PasswordHash))
                 return Unauthorized("Nieprawidłowe dane logowania.");
 
             var token = GenerateJwtToken(user);

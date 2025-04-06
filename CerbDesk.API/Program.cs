@@ -1,6 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using CerbDesk.API.Data;
 using CerbDesk.API.Services;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -36,12 +39,18 @@ builder.Services.AddAuthentication("Bearer")
         };
     });
 
-app.UseAuthentication();
-app.UseAuthorization();
 
+// Obługa endpoint fileUpload
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "CerbDesk.API", Version = "v1" });
+    c.OperationFilter<FileUploadOperationFilter>(); // <-- dodajesz tylko RAZ
+});
 
 
 var app = builder.Build();
+
+
 
 // Konfiguracja potoku HTTP (middleware)
 if (app.Environment.IsDevelopment())
@@ -50,12 +59,19 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseAuthentication();
+app.UseAuthorization();
+
+
 app.UseHttpsRedirection();
 
 app.UseRouting();
 
 // Mapowanie kontrolerów
 app.MapControllers();
+
+
+
 
 // Przykładowy endpoint WeatherForecast (opcjonalnie, można zostawić dla testów)
 var summaries = new[]
