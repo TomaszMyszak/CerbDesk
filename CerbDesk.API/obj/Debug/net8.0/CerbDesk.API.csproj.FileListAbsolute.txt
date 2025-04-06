@@ -156,3 +156,14 @@ C:/Users/tmysz/Source/Repos/CerbDesk/CerbDesk.API/obj/Debug/net8.0/CerbDesk.API.
 /home/tomek/projekty/CerbDesk/CerbDesk.API/obj/Debug/net8.0/CerbDesk.API.dll
 /home/tomek/projekty/CerbDesk/CerbDesk.API/obj/Debug/net8.0/refint/CerbDesk.API.dll
 /home/tomek/projekty/CerbDesk/CerbDesk.API/obj/Debug/net8.0/CerbDesk.API.pdb
+C:\Users\tmysz\source\repos\CerbDesk\CerbDesk.API\obj\Debug\net8.0\CerbDesk.API.csproj.AssemblyReference.cache
+C:\Users\tmysz\source\repos\CerbDesk\CerbDesk.API\obj\Debug\net8.0\CerbDesk.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tmysz\source\repos\CerbDesk\CerbDesk.API\obj\Debug\net8.0\CerbDesk.API.AssemblyInfoInputs.cache
+C:\Users\tmysz\source\repos\CerbDesk\CerbDesk.API\obj\Debug\net8.0\CerbDesk.API.AssemblyInfo.cs
+C:\Users\tmysz\source\repos\CerbDesk\CerbDesk.API\obj\Debug\net8.0\CerbDesk.API.csproj.CoreCompileInputs.cache
+C:\Users\tmysz\source\repos\CerbDesk\CerbDesk.API\obj\Debug\net8.0\CerbDesk.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\tmysz\source\repos\CerbDesk\CerbDesk.API\obj\Debug\net8.0\CerbDesk.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\tmysz\source\repos\CerbDesk\CerbDesk.API\obj\Debug\net8.0\CerbDesk.API.sourcelink.json
+C:\Users\tmysz\source\repos\CerbDesk\CerbDesk.API\obj\Debug\net8.0\CerbDesk.API.dll
+C:\Users\tmysz\source\repos\CerbDesk\CerbDesk.API\obj\Debug\net8.0\refint\CerbDesk.API.dll
+C:\Users\tmysz\source\repos\CerbDesk\CerbDesk.API\obj\Debug\net8.0\CerbDesk.API.pdb

@@ -1,6 +1,5 @@
 ﻿using System;
 
-
 namespace CerbDesk.API.Models.Core
 {
     public class Analytics
@@ -10,5 +9,9 @@ namespace CerbDesk.API.Models.Core
         public double MetricValue { get; set; } // Wartość metryki
         public required string DateRange { get; set; } // Zakres dat np. "2024-01-01 to 2024-01-31"
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow; // Data wygenerowania statystyk
+
+        // Relacja z użytkownikiem (jeśli wymagana)
+        public int? UserId { get; set; }
+        public User? User { get; set; }
     }
 }

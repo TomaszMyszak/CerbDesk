@@ -7,6 +7,7 @@ namespace CerbDesk.API.Models.Core
 {
     public class Attachment
     {
+        private object? ticket;
 
         public int Id { get; set; } // Identyfikator załącznika
         public int TicketId { get; set; } // Powiązanie ze zgłoszeniem
@@ -17,6 +18,7 @@ namespace CerbDesk.API.Models.Core
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow; // Data utworzenia pliku
 
         // Relacja do zgłoszenia (Ticket)
-        public Ticket Tickets { get; set; }
+        public required Ticket Ticket { get; set; }
+       // public object? Ticket { get => ticket; internal set => ticket = value; }  // Wyjaśnić i zweryfikować w fazie testowania aplikacji
     }
 }

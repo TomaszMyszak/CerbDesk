@@ -18,22 +18,75 @@ namespace CerbDesk.API.Controllers
 
         // GET: api/analytics
         [HttpGet]
-        public async Task<IActionResult> GetAnalyticsWithDetails()
+        public async Task<IActionResult> GetAnalytics()
+        {
+            var analytics = await _context.Analytics.ToListAsync();
+            return Ok(analytics);
+        }
+
+        // GET: api/analytics/{id}
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetAnalyticsWithDetails(int id)
         {
             var analytics = await _context.Analytics
                 .Include(a => a.User) // Relacja z użytkownikiem (jeśli istnieje)
-                .ToListAsync();
+                .FirstOrDefaultAsync(a => a.Id == id);
+
+            if (analytics == null)
+                return NotFound();
 
             return Ok(analytics);
         }
 
         // POST: api/analytics
         [HttpPost]
-        public IActionResult CreateAnalytics([FromBody] Analytics analytics)
+        public async Task<IActionResult> CreateAnalytics([FromBody] Analytics analytics)
         {
-            _context.Analytics.Add(analytics); // Poprawne użycie Add
-            _context.SaveChanges();
-            return CreatedAtAction(nameof(GetAnalytics), new { id = analytics.Id }, analytics);
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            _context.Analytics.Add(analytics); // Dodanie Analytics do bazy danych
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(GetAnalyticsWithDetails), new { id = analytics.Id }, analytics);
+        }
+
+        // PUT: api/analytics/{id}
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateAnalytics(int id, [FromBody] Analytics analytics)
+        {
+            if (id != analytics.Id)
+                return BadRequest();
+
+            _context.Entry(analytics).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!_context.Analytics.Any(a => a.Id == id))
+                    return NotFound();
+
+                throw;
+            }
+
+            return NoContent();
+        }
+
+        // DELETE: api/analytics/{id}
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteAnalytics(int id)
+        {
+            var analytics = await _context.Analytics.FindAsync(id);
+            if (analytics == null)
+                return NotFound();
+
+            _context.Analytics.Remove(analytics);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
         }
     }
 }

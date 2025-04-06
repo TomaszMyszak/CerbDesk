@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/home/tomek/projekty/CerbDesk/CerbDesk.API/CerbDesk.API.csproj": {}
+    "C:\\Users\\tmysz\\source\\repos\\CerbDesk\\CerbDesk.API\\CerbDesk.API.csproj": {}
   },
   "projects": {
-    "/home/tomek/projekty/CerbDesk/CerbDesk.API/CerbDesk.API.csproj": {
+    "C:\\Users\\tmysz\\source\\repos\\CerbDesk\\CerbDesk.API\\CerbDesk.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/tomek/projekty/CerbDesk/CerbDesk.API/CerbDesk.API.csproj",
+        "projectUniqueName": "C:\\Users\\tmysz\\source\\repos\\CerbDesk\\CerbDesk.API\\CerbDesk.API.csproj",
         "projectName": "CerbDesk.API",
-        "projectPath": "/home/tomek/projekty/CerbDesk/CerbDesk.API/CerbDesk.API.csproj",
-        "packagesPath": "/home/tomek/.nuget/packages/",
-        "outputPath": "/home/tomek/projekty/CerbDesk/CerbDesk.API/obj/",
+        "projectPath": "C:\\Users\\tmysz\\source\\repos\\CerbDesk\\CerbDesk.API\\CerbDesk.API.csproj",
+        "packagesPath": "C:\\Users\\tmysz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tmysz\\source\\repos\\CerbDesk\\CerbDesk.API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/tomek/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\tmysz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,15 +44,26 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "HiNetCloud.System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[23.10.10.15, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.11, )"
+            },
+            "Microsoft.CodeAnalysis.BannedApiAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.4, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -56,6 +74,10 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[9.0.2, )"
+            },
+            "ScottBrady.IdentityModel.Tokens.Branca": {
+              "target": "Package",
+              "version": "[3.1.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -81,7 +103,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

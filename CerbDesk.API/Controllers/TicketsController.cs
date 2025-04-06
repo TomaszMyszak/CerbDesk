@@ -29,6 +29,26 @@ namespace CerbDesk.API.Controllers
             return Ok(tickets);
         }
 
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetTicketWithDetails(int id)
+        {
+            var ticket = await _context.Tickets
+                .Include(t => t.User) // Pobierz użytkownika zgłoszenia
+                .Include(t => t.Comments) // Pobierz komentarze
+                .Include(t => t.Attachments) // Pobierz załączniki
+                .Include(t => t.Category) // Pobierz kategorię zgłoszenia
+                .Include(t => t.SLA) // Pobierz SLA
+                .Include(t => t.TicketTags) // Pobierz tagi zgłoszenia
+                    .ThenInclude(tt => tt.Tag) // Nawigacja do powiązanych tagów
+                .FirstOrDefaultAsync(t => t.Id == id);
+
+            if (ticket == null)
+                return NotFound();
+
+            return Ok(ticket);
+        }
+
+
         // GET: api/tickets/{id}
         [HttpGet("{id}")]
         public async Task<IActionResult> GetTicket(int id)
@@ -93,23 +113,6 @@ namespace CerbDesk.API.Controllers
             _context.Tickets.Remove(ticket);
             await _context.SaveChangesAsync();
             return NoContent();
-        }
-
-
-        // GET: api/tickets/{id}
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetTicketWithDetails(int id)
-        {
-            var ticket = await _context.Tickets
-                .Include(t => t.Attachments) // Ładowanie załączników
-                .Include(t => t.Comments)   // Ładowanie komentarzy
-                .Include(t => t.User)       // Ładowanie użytkownika zgłoszenia
-                .FirstOrDefaultAsync(t => t.Id == id);
-
-            if (ticket == null)
-                return NotFound();
-
-            return Ok(ticket);
         }
 
     }

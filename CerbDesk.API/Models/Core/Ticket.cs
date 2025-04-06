@@ -1,31 +1,42 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using CerbDesk.API.Models.Categories;
+using CerbDesk.API.Models.SLA; // Namespace SLA
 using CerbDesk.API.Models.Core;
-using CerbDesk.API.Models.SLA;
+using CerbDesk.API.Models.Tagging; // Namespace Core
 
 namespace CerbDesk.API.Models.Core
 {
     public class Ticket
     {
         public int Id { get; set; }
+
+        // Relacja do tabeli Users
         public int UserId { get; set; }
-        public User User { get; set; } // Relacja do tabeli Users
+        public User User { get; set; }
+
+        // G³ówne pola zg³oszenia
         public string Title { get; set; }
         public string Description { get; set; }
         public string Priority { get; set; }
         public string Status { get; set; } = "Open";
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
-        public int? CategoryId { get; set; } // Opcjonalna kategoria zg³oszenia
-        public Category Category { get; set; } // Nawigacja do kategorii
-        public int? SLAId { get; set; } // Powi¹zanie ze SLA
-        public SLA.SLA SLA { get; set; } // U¿ycie aliasu // Nawigacja do SLA
-        public object TicketTags { get; internal set; }
-        public object Comments { get; internal set; }
-        public object Attachments { get; internal set; }
-    }
+        // Relacja do kategorii (opcjonalna)
+        public int? CategoryId { get; set; }
+        public Category Category { get; set; }
 
+        // Relacja do SLA (opcjonalna)
+        public int? SLAId { get; set; }
+        public SLA.SLA SLA { get; set; }
+
+        // Nawigacja do komentarzy
+        public ICollection<Comment> Comments { get; set; } = new List<Comment>();
+
+        // Nawigacja do za³¹czników
+        public ICollection<Attachment> Attachments { get; set; } = new List<Attachment>();
+
+        // Relacja do tagów zg³oszenia
+        public ICollection<TicketTag> TicketTags { get; set; } = new List<TicketTag>();
+    }
 }

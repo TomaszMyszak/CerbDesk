@@ -64,6 +64,13 @@ namespace CerbDesk.API.Data
                 .WithMany(u => u.Attachments)
                 .HasForeignKey(a => a.UserId);
 
+            // Relacja: Analytics -> User
+            modelBuilder.Entity<Analytics>()
+                .HasOne(a => a.User)
+                .WithMany(u => u.Analytics)
+                .HasForeignKey(a => a.UserId)
+                .OnDelete(DeleteBehavior.SetNull);
+
             // Relacja: SLA -> Tickets
             modelBuilder.Entity<SLA>()
                 .HasMany(s => s.Tickets)
@@ -94,7 +101,13 @@ namespace CerbDesk.API.Data
                 .WithMany(t => t.TicketTags)
                 .HasForeignKey(tt => tt.TagId);
 
-            // Inne konfiguracje...
+            // Relacja: Analitics -> User
+            modelBuilder.Entity<Analytics>()
+            .HasOne(a => a.User)
+            .WithMany(u => u.Analytics) // Dodaj właściwość nawigacyjną w klasie `User`, jeśli wymagana
+            .HasForeignKey(a => a.UserId)
+            .OnDelete(DeleteBehavior.SetNull); // Usunięcie użytkownika ustawia UserId na null
+
         }
     }
 }
